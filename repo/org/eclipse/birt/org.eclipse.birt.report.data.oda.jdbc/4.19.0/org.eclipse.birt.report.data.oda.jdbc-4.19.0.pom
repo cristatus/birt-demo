@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.eclipse.birt</groupId>
+  <artifactId>org.eclipse.birt.report.data.oda.jdbc</artifactId>
+  <version>4.19.0</version>
+  <name>BIRT ODA JDBC Bridge Driver</name>
+  <description>BIRT ODA JDBC Bridge Driver</description>
+  <dependencies>
+    <dependency>
+      <groupId>org.eclipse.platform</groupId>
+      <artifactId>org.eclipse.core.runtime</artifactId>
+      <version>3.33.0</version>
+      <optional>false</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.eclipse.birt.dependencies</groupId>
+      <artifactId>org.eclipse.datatools.connectivity.oda</artifactId>
+      <version>3.7.0</version>
+      <optional>false</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.derby</groupId>
+      <artifactId>derby</artifactId>
+      <version>[10.16.1,11)</version>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.eclipse.birt.dependencies</groupId>
+      <artifactId>org.eclipse.datatools.connectivity.oda.profile</artifactId>
+      <version>3.5.0</version>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.eclipse.birt</groupId>
+      <artifactId>org.eclipse.birt.report.data.bidi.utils</artifactId>
+      <version>4.19.0</version>
+      <optional>false</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.eclipse.birt</groupId>
+      <artifactId>org.eclipse.birt.core</artifactId>
+      <version>4.19.0</version>
+      <optional>false</optional>
+    </dependency>
+  </dependencies>
+</project>
