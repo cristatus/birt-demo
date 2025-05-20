@@ -2,6 +2,7 @@ package org.eclipse.birt.demo;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import com.lowagie.text.pdf.LayoutProcessor;
 import com.lowagie.text.pdf.PdfReader;
 import com.lowagie.text.pdf.parser.PdfTextExtractor;
 import java.io.IOException;
@@ -13,6 +14,10 @@ import org.junit.jupiter.api.Test;
 public class BirtTest {
 
   private String extractText(Path pdf) throws IOException {
+    // Causing font not found issue
+    // See https://github.com/LibrePDF/OpenPDF/issues/1159#issuecomment-2297508049
+    LayoutProcessor.disable();
+
     var sb = new StringBuilder();
     try (var reader = new PdfReader(pdf.toString())) {
       var extractor = new PdfTextExtractor(reader);
