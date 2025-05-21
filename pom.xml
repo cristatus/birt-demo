@@ -6,7 +6,7 @@
 
   <groupId>org.eclipse.birt</groupId>
   <artifactId>birt-demo</artifactId>
-  <version>4.20.0-SNAPSHOT</version>
+  <version>4.20.0</version>
 
   <name>BURT Runtime Demo</name>
   <description>BIRT Runtime demo using maven dependencies</description>
@@ -21,7 +21,7 @@
       <id>eclipse-birt</id>
       <name>Eclipse BIRT</name>
       <layout>default</layout>
-      <url>https://ci.eclipse.org/birt/job/maven-publish/1/artifact/repo/</url>
+      <url>https://ci.eclipse.org/birt/job/maven-publish/3/artifact/repo/</url>
     </repository>
   </repositories>
 
